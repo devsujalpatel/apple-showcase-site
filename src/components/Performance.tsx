@@ -1,7 +1,6 @@
 "use client";
 import {
   performanceImages,
-  PerformanceImgPosition,
   performanceImgPositions,
 } from "@/constants";
 import { useGSAP } from "@gsap/react";
