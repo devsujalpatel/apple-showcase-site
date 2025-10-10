@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
 
 export const metadata: Metadata = {
   title: "Apple Show",
@@ -33,6 +35,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
