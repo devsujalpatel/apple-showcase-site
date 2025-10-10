@@ -7,28 +7,26 @@ export const metadata: Metadata = {
   description: "Apple Show Case Website",
 };
 
-
 const Regular = localFont({
   src: "../../public/fonts/regular.otf",
   variable: "--font-regular",
-   display: "swap",
-})
+  display: "swap",
+});
 const Medium = localFont({
   src: "../../public/fonts/medium.otf",
   variable: "--font-medium",
-   display: "swap",
-})
+  display: "swap",
+});
 const SemiBold = localFont({
   src: "../../public/fonts/semibold.otf",
   variable: "--font-semibold",
-   display: "swap",
-})
+  display: "swap",
+});
 const Bold = localFont({
   src: "../../public/fonts/bold.otf",
   variable: "--font-bold",
-   display: "swap",
-})
-
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -36,8 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${Regular.variable} ${Medium.variable} ${SemiBold.variable} ${Bold.variable} antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${Regular.variable} ${Medium.variable} ${SemiBold.variable} ${Bold.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
