@@ -20,6 +20,8 @@ export function MacbookModel16(props) {
     "/models/macbook-16-transformed.glb"
   );
   const texture = useTexture("/screen.png");
+  texture.colorSpace = THREE.SRGBColorSpace
+  texture.needsUpdate = true
 
   const { color } = useMacbookStore();
 
