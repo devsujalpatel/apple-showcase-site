@@ -20,12 +20,12 @@ export const NavBar = () => {
           ))}
         </ul>
         <div className="flex-center gap-3">
-            <button>
-                <Image src="/search.svg" alt="Search" width={25} height={25} />
-            </button>
-            <button>
-                <Image src="/cart.svg" alt="Cart" width={25} height={25} />
-            </button>
+          <button>
+            <Image src="/search.svg" alt="Search" width={25} height={25} />
+          </button>
+          <button>
+            <Image src="/cart.svg" alt="Cart" width={25} height={25} />
+          </button>
         </div>
       </nav>
     </header>
